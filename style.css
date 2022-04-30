@@ -3,7 +3,7 @@
   padding: 00;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
 }
 ul,
@@ -19,211 +19,538 @@ li {
 /* NAV */
 .nav {
   height: 100%;
-  flex-basis: 16%;
-  background: rgb(243, 240, 240);
+  flex-basis: 12%;
+  /* background: rgb(243, 240, 240); */
   padding: 1rem;
 }
 .nav-bar {
-  width: 90px;
+  width: 80%;
   height: 100%;
   background: black;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px rgba(0,0,0,.4);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-.nav-bar h1 a{
-  color: white;
-  font-family: "Baloo Bhaina 2", cursive;
+.nav-bar h1 {
   font-size: 3rem;
-  padding-top: 15%;
-  text-decoration: none;
+  font-family: "Baloo Bhaina 2", cursive;
   text-align: center;
-  display: block;
+  margin-top: 1.2rem;
 }
-
+.nav-bar h1 a {
+  color: white;
+}
 .nav-bar ul li a {
-  font-size: 15px;
   color: white;
   padding: 1.5rem 0;
   display: block;
   text-align: center;
 }
-
 .nav-bar ul li a:hover {
   color: limegreen;
 }
 
 /* MIDDLE_BOX */
-/* Josh */
 .middle-box {
-  flex-basis: 42%;
-  background: white;
-}
-.middle-box-area {
-  height: 92%;
-  width: 100%;
-  background: green;
-  margin-top: 4%;
-  border-radius: 20px;
-}
-.hellow-josh {
-  height: 23%;
-  width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 40px;
-  border-radius: 10px;
+  flex-basis: 44%;
   display: flex;
+  flex-direction: column;
 }
-.j-text {
-  flex-basis: 40%;
+/* JOSH */
+.josh {
+  flex-basis: 20%;
+  background-color: rgb(236, 234, 234);
+  padding-left: 1rem;
+  display: flex;
+  border-radius: 1rem;
+  margin-top: 3rem;
 }
-.hellow-josh h1 {
-  font-family: "Baloo Bhaina 2";
-  padding-top: 25px;
-  padding-left: 15px;
-  font-size: 35px;
-}
-.hellow-josh p {
-  font-family: "Baloo Bhaina 2";
-  padding-left: 15px;
-}
-.j-img {
+
+.josh-text {
   flex-basis: 60%;
-  position: relative;
+  margin-top: 2.5rem;
 }
-.j-img img {
-  height: 120%;
-  width: 50%;
-  position: absolute;
-  right: 90px;
-  top: -30px;
+.josh-pic img {
+  height: 10rem;
+  margin-top: -2rem;
 }
-
-.right-box {
-  flex-basis: 42%;
-  background: yellow;
+.josh-text h1 {
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 1.5rem;
 }
-
-/* Spanish */
+.josh-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -0.8rem;
+  font-size: 0.8rem;
+}
 
 .spanish {
-  height: 50px;
-  max-width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 10px;
-  border-radius: 10px;
+  flex-basis: 10%;
+  background-color: rgb(236, 234, 234);
+  border-radius: 0.7rem;
   display: flex;
-  position: relative;
+  align-items: center;
+  margin: 0.5rem 00 0.5rem 00;
 }
-.s-icon {
-  padding-top: 9px;
-  padding-left: 15px;
+.spanish img:nth-child(1) {
+  height: 2rem;
+  padding-left: 0.5rem;
 }
-.s-icon img {
-  height: 80%;
+.spanish-text {
+  padding-left: 2rem;
 }
-.s-icon img:nth-child(2) {
-  height: 70%;
-  position: absolute;
-  right: 250px;
-  top: 9px;
+.spanish h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 0rem;
 }
-.s-icon p {
-  position: absolute;
-  font-size: 12px;
-  right: 255px;
-  top: 15px;
-  font-family: "Baloo Bhaina 2";
+.spanish p {
+  font-size: 0.8em;
+}
+.spanish img {
+  height: 2rem;
+  padding-left: 5rem;
 }
 .spanish button {
-  height: 32px;
-  width: 85px;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.65rem;
   background: black;
   color: white;
+  margin-left: 2rem;
+  padding: 0.2rem;
+  cursor: pointer;
 }
-.s-text {
-  padding-left: 70px;
-  margin-top: 1px;
+.spanish button:hover {
+  color: red;
 }
-.s-text h1 {
-  font-size: 18px;
-  font-family: "Baloo Bhaina 2";
+.spanish li {
+  margin-left: 3rem;
 }
-.s-text p {
-  font-size: 9px;
-  font-family: "Baloo Bhaina 2";
-  margin-top: -8px;
-}
-
-/* Courses */
 
 .courses {
-  height: 55px;
-  max-width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 10px;
-  border-radius: 10px;
   display: flex;
+  font-family: "Baloo Bhaina 2", cursive;
+  padding-left: 0.1rem;
 }
-.c-head {
-  flex-basis: 30%;
-}
-.c-head h1 {
-  font-size: 20px;
-  font-family: "Baloo Bhaina 2";
-}
-.c-body {
+.courses-def {
   display: flex;
-  margin-left: -140px;
-  padding-top: 20px;
+  margin-top: 2.9rem;
+  margin-left: -5.5rem;
 }
-.c-body p {
-  padding: 10px;
-  font-family: "Baloo Bhaina 2";
+.courses-def p {
+  color: gray;
+  padding: 00 2rem 00rem 00rem;
+}
+.courses-ref {
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+.figma {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.figma img:nth-child(1) {
+  margin-left: 0.5rem;
+}
+.fi-text {
+  margin-left: 2rem;
+}
+.fi-text h4 {
+  font-size: 0.8rem;
+}
+.fi-text p {
+  font-size: 0.7rem;
+}
+.figma img:nth-child(3) {
+  margin-left: 5rem;
+}
+.figma p:nth-child(4) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+.figma img:nth-child(5) {
+  margin-left: 5rem;
+}
+.figma p:nth-child(6) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.figma button {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.65rem;
+  background: black;
+  color: white;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.figma button:hover {
+  color: red;
+}
+.analog {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.analog img:nth-child(1) {
+  margin-left: 0.5rem;
+}
+.an-text {
+  margin-left: 1.4rem;
+}
+.an-text h4 {
+  font-size: 0.8rem;
+}
+.an-text p {
+  font-size: 0.6rem;
+}
+.analog img:nth-child(3) {
+  margin-left: 3.7rem;
+}
+.analog p:nth-child(4) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+.analog img:nth-child(5) {
+  margin-left: 5rem;
+}
+.analog p:nth-child(6) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.analog button {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.65rem;
+  background: black;
+  color: white;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.analog button:hover {
+  color: red;
+}
+.master {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.master img:nth-child(1) {
+  margin-left: 0.5rem;
+}
+.ma-text {
+  margin-left: 1.4rem;
+}
+.ma-text h4 {
+  font-size: 0.8rem;
+}
+.ma-text p {
+  font-size: 0.6rem;
+}
+.master img:nth-child(3) {
+  margin-left: 4.7rem;
+}
+.master p:nth-child(4) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+.master img:nth-child(5) {
+  margin-left: 5rem;
+}
+.master p:nth-child(6) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.master button {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.65rem;
+  background: black;
+  color: white;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.master button:hover {
+  color: red;
+}
+.basics {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.basics img:nth-child(1) {
+  margin-left: 0.5rem;
+}
+.ba-text {
+  margin-left: 1.4rem;
+}
+.ba-text h4 {
+  font-size: 0.8rem;
+}
+.ba-text p {
+  font-size: 0.6rem;
+}
+.basics img:nth-child(3) {
+  margin-left: 4.7rem;
+}
+.basics p:nth-child(4) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+.basics img:nth-child(5) {
+  margin-left: 5rem;
+}
+.basics p:nth-child(6) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.basics button {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.65rem;
+  background: black;
+  color: white;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.basics button:hover {
+  color: red;
+}
+
+.photoshop {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(236, 234, 234);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.photoshop img:nth-child(1) {
+  margin-left: 0.5rem;
+}
+.ph-text {
+  margin-left: 1.4rem;
+}
+.ph-text h4 {
+  font-size: 0.8rem;
+}
+.ph-text p {
+  font-size: 0.6rem;
+}
+.photoshop img:nth-child(3) {
+  margin-left: 4.7rem;
+}
+.photoshop p:nth-child(4) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+.photoshop img:nth-child(5) {
+  margin-left: 5rem;
+}
+.photoshop p:nth-child(6) {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.photoshop button {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.65rem;
+  background: black;
+  color: white;
+  margin-left: 3rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.photoshop button:hover {
+  color: red;
+}
+
+/* RIGHT-BOX */
+.right-box {
+  flex-basis: 44%;
+}
+.search-panel {
+  height: 5%;
+  margin: 3rem 2rem 00 3rem;
+  display: flex;
+  align-items: center;
+}
+.search {
+  border-radius: 0.3rem;
+  background-color: rgb(236, 234, 234);
+  padding-right: 3rem;
+}
+
+.search i:nth-child(1) {
+  padding: 0.1rem;
+}
+.search input {
+  width: 12rem;
+  background-color: rgb(236, 234, 234);
+  border: none;
+  outline: none;
+  padding-left: 0.1rem;
+}
+.search-panel img:nth-child(2) {
+  height: 95%;
+  margin-left: 9rem;
+}
+.search-panel img:nth-child(3) {
+  height: 95%;
+  margin-left: 0.2rem;
+}
+.search-panel select {
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  margin-left: 0.1rem;
+  background-color: rgb(236, 234, 234);
+}
+
+.complate {
+  height: 10%;
+  display: flex;
+  margin: 1rem 00 00 -6rem;
+}
+
+.c11 {
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 234, 234);
+  margin-left: 9rem;
+  border-radius: 0.5rem;
+}
+.c11 h1 {
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 3rem;
+  padding-left: 01.2rem;
+}
+.c11 p {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.ip4 {
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(236, 234, 234);
+  margin-left: 3rem;
+  margin-left: 6rem;
+  border-radius: 0.5rem;
+}
+.ip4 h1 {
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 3rem;
+  padding-left: 1.5rem;
+}
+.ip4 p {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+}
+.statistic {
+  margin: 1rem 00 -3rem 3rem;
+}
+.statistic h1 {
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 1.5rem;
+}
+.st-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 10rem 00 0rem;
+  font-size: 0.8rem;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.st-text p:nth-child(2) {
   color: gray;
 }
-.c-body p:nth-child(1) {
+.st-text select:nth-child(3) {
   color: black;
+  border-radius: 0.5rem;
+  font-family: "Baloo Bhaina 2", cursive;
+  margin-right: -2rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+  padding-left: 0.5rem;
 }
-/* Learn figma */
-.learn-figma {
-  height: 50px;
-  max-width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 8px;
-  border-radius: 10px;
+.statistic img {
+  height: 12rem;
+  width: 30rem;
 }
-/* Analog */
-.analog {
-  height: 50px;
-  max-width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 8px;
-  border-radius: 10px;
+.learn-more {
+  display: flex;
+  justify-content: space-between;
 }
-/* Master */
-.master {
-  height: 50px;
-  max-width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 8px;
-  border-radius: 10px;
+.le-mo {
+  margin: 5rem 00 00rem 3rem;
 }
-/* Basic */
-.basic {
-  height: 50px;
-  max-width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 8px;
-  border-radius: 10px;
+.learn-more img:nth-child(2) {
+  margin: 5rem 10rem 00 00;
+  height: 7rem;
 }
-/* Photoshop */
-.photoshop {
-  height: 50px;
-  max-width: 100%;
-  background-color: rgb(247, 243, 243);
-  margin-top: 8px;
-  border-radius: 10px;
+.le-mo h3:nth-child(1){
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: 1.5rem;
+}
+.le-mo p:nth-child(2){
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: .8rem;
+  margin-top: -.4rem;
+}
+.le-mo p:nth-child(3){
+  font-family: "Baloo Bhaina 2", cursive;
+  font-size: .8rem;
+  margin-top: -.4rem;
+}
+.le-mo button{
+  height: 2rem;
+  width: 7rem;
+  border-radius: 0.65rem;
+  background: black;
+  color: white;
+  margin-left: 1rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.le-mo button:hover{
+  color: red;
 }
